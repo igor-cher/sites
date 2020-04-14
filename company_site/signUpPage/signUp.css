@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d4e6e0;
+}
+
+.form{
+    width: 500px;
+    margin: 50px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.login{
+    display: none;
+    width: 500px;
+    margin: 50px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input{
+    height: 25px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+input:focus{
+    border: 1px solid lightblue;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.form-title{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.error-block{
+    padding: 5px;
+    width: 100%;
+    background: rgb(150, 23, 48);
+    color: rgb(206, 190, 151);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.error{
+    font-size: 1.1rem;
+    animation: fontbulger 2s infinite;
+    text-align: center;
+}
+
+@keyframes fontbulger {
+    0% {
+      transform: scale(1);
+    }
+    30% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+.success{
+    background: greenyellow;
+    color: green;
+}
+
+.input-block{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.lable{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.input-info{
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 8px;
+    color: grey;
+}
+
+.input-submit{
+    cursor: pointer;
+    padding: 0px 20px;
+    border: 0;
+    width: 40%;
+    font-size: 1.1em;
+    background: cadetblue;
+    color: black;
+    border-radius: 3px;
+    outline: 0;
+    transition: 0.15s ease-in-out background;
+}
+
+.input-submit:hover{
+    background: darkgray;
+}
+#inputBtn{
+    text-align: center;
+}
