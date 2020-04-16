@@ -69,13 +69,13 @@ sendBlank.addEventListener("click", (e)=>{
 
 // show whole text 
 
-document.querySelectorAll(".item").forEach( el =>{
-    el.addEventListener("click", (e)=>{
-        console.log()
-        el.childNodes[5].classList.toggle("rotateShowAll")
-        el.childNodes[3].classList.toggle("show")
-    })
-});
+// document.querySelectorAll(".item").forEach( el =>{
+//     el.addEventListener("click", (e)=>{
+//         console.log()
+//         el.childNodes[5].classList.toggle("rotateShowAll")
+//         el.childNodes[3].classList.toggle("show")
+//     })
+// });
 
 //hide li
 
@@ -97,6 +97,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
+    $('.nav').removeClass('open');
 })
 
 $(window).scroll(function() {
@@ -109,3 +110,4 @@ $(window).scroll(function() {
       }
     }
 });
+
