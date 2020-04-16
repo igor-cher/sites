@@ -1,5 +1,5 @@
 // calculator
-var inHour = 11;
+var inHour = 12.5;
 
     var calculate = function() {
         var calc = $('.calculator');
