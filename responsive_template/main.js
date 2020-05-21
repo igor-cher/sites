@@ -1,6 +1,4 @@
-/*----------------------------------------------------*/
-/* Quote Loop
------------------------------------------------------- */
+
 var elements = $('.quoteLoop > .quote');
 function fade($ele) {
     $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
@@ -11,10 +9,6 @@ function fade($ele) {
 fade(elements.first());
 
 
-/*----------------------------------------------------*/
-/* Navigation
------------------------------------------------------- */
-
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > 300) {
@@ -24,7 +18,7 @@ $(window).scroll(function() {
     }
 });
 
-// Mobile Navigation
+
 $('.mobile-toggle').click(function() {
     if ($('.main_nav').hasClass('open-nav')) {
         $('.main_nav').removeClass('open-nav');
@@ -40,10 +34,6 @@ $('.main_nav li a').click(function() {
     }
 });
 
-
-/*----------------------------------------------------*/
-/* Smooth Scrolling
------------------------------------------------------- */
 
 jQuery(document).ready(function($) {
 
