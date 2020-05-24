@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="templatetemplatetemplatetemplatetemplatetemplate">
+    <meta name="keywords" content="template template template template template template template template template">
+    <meta name="author" content="templatee">
+    <meta property="og:title" content="template| template.com">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="template">
+    <meta property="og:site_name" content="template">   
+    <link rel="icon" href="" type="image/jpg" sizes="16x16">
+    <title>Template</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media_style.css">
+    <link rel="stylesheet" href="styles/retina.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+</head>
+<body>
+
+<div class="myModal">
+        <div class="modal-blur"></div>
+        <div class="modal-body">
+            <button id="close">x</button>
+            <h1>Lorem, ipsum.</h1> 
+            <p>Lorem ipsum dolor sit amet.</p> 
+        </div>
+            
+</div>
+
+<div id="wrapper" class="wrapper">
+    <header class="header">
+       <div class="container">
+        <div class="header_main">
+                <a href=""><img src="img/logo.png" alt=""/></a>
+                <div class="nav">
+                    <a href="#">Главная</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#porfolio">Портфолио</a>
+                    <a href="#footer">Команда</a>
+                    <a href="#footer">Контакты</a>
+                </div>
+                <div class="phoneBlock">
+                    <i class="icon" style="background-image: url(img/phone.svg);width: 20px; height: 20px;" ></i>
+                    <a class="phoneNumber" href="tel:+38068744297">+38068744297</a>
+                    <div class="phoneBlock_child">
+                        <a href="#" class="btn"><span>Opener</span></a>
+                        <button class="popup">Popup</button>
+                   </div>
+                </div>
+        </div>
+       </div>
+    </header>
+    <section class="hero_section" style="background-attachment:fixed; background-image: url(img/hero_img.jpg); background-size: cover; background-repeat: no-repeat;">
+        <div class="container">
+           <div class="hero_main">
+                <div class="hero_block">
+                        <h1>Lorem ipsum dolor sit.</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque rerum eligendi ea earum impedit nihil nemo, minus</p>
+                        <button>Button</button>
+                     </div>
+                     <div class="form_submit">
+                         <form action="send.php" method="post">
+                             <h2>Получить консультацию</h2>
+                             <input type="text" name="name"  onMouseOver="this.focus();"  placeholder="Ваше имя" required="" />
+                             <input type="tel" name="tel"onkeypress='validate(event)' onClick="this.value='+'" onMouseOver="this.focus()"  maxlength="256" required=""  placeholder="Ваш номер"/>
+                             <input type="email" name="email" onMouseOver="this.focus();"   placeholder="Ваша почта" required="" />
+                             <div class="agg">
+                                    <input type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked; document.querySelector('.label').classList.toggle('toggleColor');" id="agreement" name="checkbox" checked required >
+                                    <label class="label" for="agreement">Я даю согласие на обработку моих персональных данных</label>
+                                </div>
+                             <input type="submit" id="submit" value="Отправить" />
+                         </form>
+                     </div>
+           </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="our_services">
+                <div  class="service" style="background: url('img/s1.jpeg');">
+                    <div class="service_about" >
+                        <h2>title</h2>
+                        <p>subtitle subtitle</p>
+                    </div>
+                </div>
+                <div  class="service" style="background: url('img/s2.jpeg');">
+                    <div class="service_about" >
+                        <h2>title</h2>
+                        <p>subtitle subtitle</p>
+                    </div>
+                </div>
+                <div  class="service" style="background: url('img/s3.jpeg');">
+                    <div class="service_about" >
+                        <h2>title</h2>
+                        <p>subtitle subtitle</p>
+                    </div>
+                </div>
+                <div  class="service" style="background: url('img/s4.jpg');">
+                    <div class="service_about" >
+                        <h2>title</h2>
+                        <p>subtitle subtitle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="porfolio" class="portfolio">
+        <div class="container">
+            <div class="portfolio_main">
+               <div class="big popup" style="background:url(img/5.jpeg)">
+                   <p>text big</p>
+               </div>
+               <div class="small popup" style="background:url(img/6.jpeg)">
+                    <p>text</p>
+                </div>
+                <div class="small popup" style="background:url(img/7.jpeg)">
+                    <p>text</p>
+                </div>
+                <div class="small popup" style="background:url(img/8.jpg)">
+                    <p>text</p>
+                </div>
+                <div class="small popup" style="background:url(img/9.jpeg)">
+                    <p>text</p>
+                </div>
+               <div class="big popup" style="background:url(img/10.jpg)">
+                    <p>text big</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+               
+            <div class="contacts_main">
+                    <h2>title</h2>
+                    <div class="contact_us">
+                <div class="form_submit">
+                        <form action="send.php" method="post">
+                            <h2>Получить консультацию</h2>
+                            <input type="text" name="name"  onMouseOver="this.focus();"  placeholder="Ваше имя" required="" />
+                            <input type="tel" name="tel"onkeypress='validate(event)' onClick="this.value='+'" onMouseOver="this.focus()"  maxlength="256" required=""  placeholder="Ваш номер"/>
+                            <input type="email" name="email" onMouseOver="this.focus();"   placeholder="Ваша почта" required="" />
+                            <div class="agg">
+                                    <input type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked; document.querySelector('.label').classList.toggle('toggleColor');" id="agreement" name="checkbox" checked required >
+                                    <label class="label" for="agreement">Я даю согласие на обработку моих персональных данных</label>
+                                </div>
+                            <input type="submit" id="submit" value="Отправить" />
+                        </form>
+                    </div>
+                    <div class="call_us">
+                        <i class="icon"><img src="img/phone.svg" alt=""><a href="tel:+3801423433">+380423423</a></i>
+                        <div style="display: flex;">
+                         <i class="icon"><img src="img/phone.svg" alt=""></i><i class="icon"><img src="img/phone.svg" alt=""></i><i class="icon"><img src="img/phone.svg" alt=""></i> <a href="tel:+3804234234">+3804234234</a>
+                        </div>
+                        <i class="icon"><img src="img/email.svg" alt=""><a href="mailto:afdf@gmail.com"> address@gmail.com</a></i>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <p>Copyrigth @FOOTER</p>
+        </div>
+    </footer>
+</div>
+
+
+
+
+<a class="arrow_top bounce" style=" background-image: url(img/arrow_up.png); background-repeat: no-repeat; " href="#wrapper"></a>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+  <script src="main.js"></script>
+  <!-- <script src="slider.js"></script> -->
+
+</body>
+</html>

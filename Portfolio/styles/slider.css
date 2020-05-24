@@ -1,0 +1,37 @@
+.recent_news{
+    background-color: #f8f8f8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.news_title{
+    text-align: center;
+
+} 
+h3{
+    color: #002000;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 36px;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+arrows{
+    margin: 40px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 120px;
+}
+
+.prev, .next{
+    border:  2px solid lightgrey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: transparent;
+    display: flex;
+    justify-content: center; 
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
