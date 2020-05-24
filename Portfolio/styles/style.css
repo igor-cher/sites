@@ -250,7 +250,7 @@ input[type="submit"]:hover, button:hover{
         align-items: flex-end;
     }
     .icon{
-        display: none;
+        display: block;
         padding: 0 10px;
         background-repeat: no-repeat;
         transform: scale(1.2);
