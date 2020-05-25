@@ -17,6 +17,14 @@ section{
     min-height: 100vh;
 }
 
+.arrow_top{
+    right: 5%;
+    bottom: 1.5%;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+}
+
 .slick-dots{
     margin: 20px auto;
     padding: 0px;
@@ -186,6 +194,7 @@ input[type="submit"]:hover, button:hover{
 /*header*/
 
 .header{
+    padding: 5px;
     position: fixed;
     width: 100%;
     background: rgba(0,0,0,.2);
@@ -224,6 +233,7 @@ input[type="submit"]:hover, button:hover{
     .nav{
         display: flex;
         flex-direction: column;
+        align-items: center; 
         background: #121635;
         min-height: 100vh;
         position: absolute;
@@ -335,7 +345,6 @@ span:before{
 
 .navActive{
     left: 0;
-    text-align: center;
 }
 
 
@@ -452,6 +461,7 @@ form{
 .portfolio{
     display: flex;
     align-items: center;
+    background: chocolate;
 }
 
 
