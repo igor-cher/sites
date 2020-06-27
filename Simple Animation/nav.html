@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation links</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <nav class="icons">
+            <div>
+                <a href=""><i class="fa fa-facebook"></i></a>
+            </div>
+            <div>
+                <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+            <div>
+                <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+            <div>
+                <a href=""><i class="fa fa-google"></i></a>
+            </div>
+        </nav>
+
+    <script>
+        (function(){
+            let divs = document.querySelectorAll('.icons div')
+            divs.forEach((div, i) => {
+                div.style.animation = `toTopBottom 1s cubic-bezier(0.51, 0.92, 0.24, 1.15)forwards ${i / 7 + 0.3}s`;
+            })
+        })()
+    </script>
+</body>
+</html>
