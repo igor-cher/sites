@@ -56,11 +56,15 @@ function validate(evt) {
 
 let modalBlock = document.querySelector('.myModal');
 
-  document.querySelectorAll('.popup').forEach(p =>{
+// portfolio blocks
+
+  document.querySelectorAll('.popup').forEach((p,i) =>{
     p.addEventListener("click", ()=>{
       modalBlock.classList.add('showModal');
+      getValues(dataOfPortfolio,i);
     })
   })
+
   document.addEventListener('click',(event)=>{
     (event.target.id === 'close') ? modalBlock.classList.remove('showModal') : null;
   })
@@ -68,8 +72,87 @@ let modalBlock = document.querySelector('.myModal');
 
 // services
 
-document.querySelectorAll('.service').forEach(s=>{
+document.querySelectorAll('.service').forEach((s,i) =>{
     s.addEventListener('click', ()=>{
         modalBlock.classList.add('showModal');
+        getValues(data,i);
     })  
 })
+
+
+
+// data for modal blocks services
+
+let data = [
+  {key: 0, value: `<div>
+  <h1>Title</h1>
+  <p>some text</p>
+  <a href="#" >Link</a>
+</div>`},
+{key: 1, value: `<div>
+<h1>Title1</h1>
+<p>some text1</p>
+<a href="#" >Link</a>
+</div>`},
+{key: 2, value: `<div>
+  <h1>Title2</h1>
+  <p>some text2</p>
+  <a href="#" >Link</a>
+</div>`},
+{key: 3, value: `<div>
+  <h1>Title3</h1>
+  <p>some text3</p>
+  <a href="#" >Link</a>
+</div>`}
+]
+
+
+// data for portfolio blocks
+
+let dataOfPortfolio = [
+  {key: 0, value: `<div>
+  <h1>Title</h1>
+  <p>some text</p>
+  <a href="#" >Link</a>
+</div>`},
+{key: 1, value: `<div>
+<h1>Title1</h1>
+<p>some text1</p>
+<a href="#" >Link</a>
+</div>`},
+{key: 2, value: `<div>
+  <h1>Title2</h1>
+  <p>some text2</p>
+  <a href="#" >Link</a>
+</div>`},
+{key: 3, value: `<div>
+  <h1>Title3</h1>
+  <p>some text3</p>
+  <a href="#" >Link</a>
+</div>`},
+{key: 4, value: `<div>
+  <h1>Title4</h1>
+  <p>some text4</p>
+  <a href="#" >Link</a>
+</div>`},
+{key: 5, value: `<div>
+  <h1>Title5</h1>
+  <p>some text5</p>
+  <a href="#" >Link</a>
+</div>`},
+{key: 6, value: `<div>
+  <h1>Title6</h1>
+  <p>some text6</p>
+  <a href="#" >Link</a>
+</div>`}
+]
+
+
+
+function getValues(array, search) {
+  return array.reduce(function(values, item){
+      (item.key === search) && values.push(item.value);
+      document.getElementById('root').innerHTML = values;
+      return values;
+  }, []);
+}
