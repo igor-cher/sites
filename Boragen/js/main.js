@@ -1,5 +1,13 @@
 
-(function (){
+ (function(){
+  let divs = document.querySelectorAll('body section')
+  divs.forEach((div, i) => {
+      div.style.animation = `toTopBottom 1s cubic-bezier(0.51, 0.92, 0.24, 1.5)forwards ${i / 7 + 0.3}s`;
+  })
+})()
+
+
+  window.addEventListener("resize", ()=> {
     const width = window.innerWidth;
     const image = document.querySelectorAll(".hero_section")[0];
     const logo = document.querySelectorAll(".main_logo a img")[0];
@@ -10,7 +18,7 @@
     
     width >= 1024 ? logo.src = "../img/logo_desktop.png"
         : logo.src = "../img/logo_mobile.png";
-  })();
+  })
   
 
   $(".btn").click(function (e){
