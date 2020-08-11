@@ -948,6 +948,7 @@ tbody tr:nth-child(odd){
     table tr th:last-child {
         text-align: right;
         padding: 0;
+        width: 200px;
     }
     
     .content{
