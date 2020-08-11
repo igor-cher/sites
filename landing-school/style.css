@@ -997,6 +997,7 @@ tbody tr:nth-child(odd){
     }
 
     form{
+        align-items:center;
         padding: 0 30px!important;
     }
 
