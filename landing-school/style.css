@@ -984,12 +984,12 @@ tbody tr:nth-child(odd){
 
     .footer__form{
         order: 1;
-        padding: 20px 15px;
+        padding: 30px 15px;
         width: 94vw;
     }
 
     form{
-        padding: 0 50px!important;
+        padding: 0 40px!important;
     }
 
 }
