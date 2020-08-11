@@ -169,7 +169,7 @@ img{
     margin-top: 25px;
 }
 
-.course-start p{ color:black;}
+.course-start p{ color:black; font-weigth: bold;}
 
 .info-course{
     width: 100%;
