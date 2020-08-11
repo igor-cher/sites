@@ -930,10 +930,6 @@ tbody tr:nth-child(odd){
         font-size: 10px;
     }
 
-    .idea-text{display: none;}
-    .showIdea{
-        display: block;
-    }
 
     .idea-list ul{
         margin: 0 15px;
