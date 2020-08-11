@@ -49,7 +49,7 @@ a{
     text-decoration: none;
 }
 
-
+span{font-size:12px;}
 
 h1{
     font-family: 'Gotham Pro-Bold';
@@ -865,6 +865,8 @@ tbody tr:nth-child(odd){
         line-height: 22px;
     }
 
+    span{font-size:10px;}
+    
     .header {
         padding: 20px
     }
