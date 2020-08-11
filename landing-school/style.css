@@ -973,6 +973,10 @@ tbody tr:nth-child(odd){
     .footer .content{
         flex-direction: column;
     }
+    
+    .footer__contacts__links {
+        padding-top: 25px;
+    }
 
     .footer__contacts{
         order: 2;
