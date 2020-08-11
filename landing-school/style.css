@@ -939,11 +939,15 @@ tbody tr:nth-child(odd){
         padding: 0;
     }
 
+    tr td:first-child {
+        width: auto;
+    }
+    
     table tr th:last-child {
         text-align: right;
         padding: 0;
     }
-
+    
     .content{
         max-width: 85vw;
     }
