@@ -1,0 +1,500 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Gotham Pro';
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: 0;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
+}
+
+button:hover{
+    transform:scale(1.2);
+}
+
+h2, h3,h4,h5,h5{
+    letter-spacing: 3px;
+    font-family: 'Gotham Pro-Bold';
+    margin: 0;
+}
+
+h1{
+    font-family: 'Gotham Pro-Bold';
+    font-size: 35px;
+    margin: 0 0 30px;
+    line-height: 35px;
+}
+
+p{
+    margin: 13px 0;
+    line-height: 25px;
+    color: #636363;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    margin: 0px auto;
+    max-width: 1149px;
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 79px 85px 0;
+}
+.header button{
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    width: 27px;
+    height: 17px;
+}
+
+.header button span{
+    display: block;
+    background: url('/img/ham.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 4px;
+    margin-bottom: 1px;
+}
+.header button span:nth-child(2){
+    height: 5px;
+    margin-top: 2px;
+}
+
+
+/* main */
+
+/* hero-section */
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Gotham Pro-Bold';
+    border-bottom: 1px solid lightgray;
+}
+
+
+
+.first-stage{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 476px;
+}
+
+.first-stage .course-start{
+    letter-spacing: 1px;
+    color: black;
+    width: 100%;
+    max-width: 457px;
+    background: #FFE409;
+    height: 100%;
+ 
+}
+
+
+.first-stage .course-start .date{
+    -webkit-box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.5);
+    border: 10px solid black;
+    -moz-box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.5);
+    width: 158px;
+    padding: 45px 0 38px;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+.info-course{
+    width: 100%;
+    max-width: 680px;
+    height: 100%;
+    align-items: flex-start;
+}
+.info-course div{
+    width: 45%;
+    padding: 75px 0 20px;
+}
+
+ .info-course p:first-child{
+    font-size: 14px;
+    color: #AFAFAF;
+    letter-spacing: 3px;
+}
+
+
+.add-info{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    padding: 25px 45px;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.add-info > div{
+    display: inline-flex;
+    height: 64px;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.add-info div div{
+    padding-top: 13px;
+    padding-left: 55px;
+}
+
+.second-stage{
+    height: 318px;
+    display: flex;
+}
+
+.shedule{
+    width:100%;
+    max-width: 457px;
+    height: 100%;
+}
+
+.shedule div {
+    width: 215px;
+    padding-top: 60px;
+}
+
+.shedule-info{
+    padding: 8px;
+    background: #F6F6F6;
+    width: calc(100% - 457px);
+    height: 100%;
+    flex-direction: row;
+}
+
+
+.shedule-info .shedule-time{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.shedule-first{
+    border-radius: 3px;
+    background: white;
+    width: 225px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 13px 0;
+}
+
+.shedule-first div{
+    width: 30%;
+    height: 50%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.shedule-first div p {
+    margin: 0;
+}
+
+.shedule-second{
+    width: 51%;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+}
+
+.shedule-second div{
+    padding: 13px 35px;
+    width: 100%;
+    max-width: 392px;
+    border-radius: 3px;
+    border:1px solid grey;
+    background: white;
+}
+
+.shedule-info button{
+    width: 33px;
+    height: 33px;
+    padding: 7px;
+    border: 2px solid red;
+    border-radius: 50%;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+}
+
+/* end hero-section */
+
+
+/* Program section */
+
+.program{
+    background: #F8F8F8;
+}
+
+.ideas{
+    padding-top: 30px;
+}
+.ideas h2{
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+.idea{
+    width: 100%;
+    height: 163px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    background: white;
+    margin-bottom: 40px;
+}
+
+.idea-info button{
+    margin: 0 10px;
+    width: 43px;
+    height: 34px;
+}
+
+.idea-info button:focus{
+    background: #FFE409;
+    transform: rotate(180deg);
+}
+
+.idea:last-child{
+    margin-bottom: 0;
+}
+.idea-info{
+    width: 100%;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.idea-info div:first-child{
+    max-width: 328px;
+    width: 100%;
+}
+
+.idea-info div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.idea-info .idea-text{
+    width: 100%;
+    max-width: 422px;
+}
+
+
+.idea .image{
+    background: #FFE409;
+    max-width: 162px;
+    width: 100%;
+    height: 160px;
+}
+
+.idea-list{
+    width: 100%;
+    padding-top: 130px;
+    text-align: left;
+    background: white;
+    height: 630px;
+}
+
+.idea-list ul{
+    margin: 0px 160px;
+    padding: 0;
+}
+.idea-list li{
+    text-decoration-style: none;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.table{
+    padding-top: 180px;
+    padding-bottom: 231px;
+}
+.table-content{
+    padding-top: 155px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 100px;
+    margin: 0 auto;
+    max-width: 1360px;
+    background: white;
+}
+
+
+table{
+    width: 100%;
+    border-spacing: 12px;
+}
+
+table thead th:last-child{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+table tr th:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+tr{
+    height: 40px;
+}
+
+tr td:first-child{
+    text-align: center;
+    width: 250px;
+}
+
+tr td:last-child{
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+
+tbody tr:nth-child(odd){
+    background: #F3F3F3;
+}
+
+.orange{
+    background: #FFE409!important;
+}
+/* end Program section */
+
+/* format */
+.format{
+    padding-top: 100px;
+    padding-bottom: 250px;
+    height: 731px;
+    border-bottom: 1px solid lightgray;
+}
+
+.format .content{
+    padding-top: 230px;
+}
+
+.content .content-main{
+    margin-bottom: 120px;
+    max-width: 800px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.content .content-main span{
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    border-radius: 50%;
+    background: black;
+    display: inline-block;
+}
+
+.content-main__offline, .content-main__online{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    min-height: 240px;
+    justify-content: space-between;
+}
+
+.content-main__offline:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: -25%;
+    top: 25%;
+    width: 126px;
+    height: 126px;
+    border-radius: 63px;
+    background-color: #ffe409;
+}
+
+.content-main__online:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -30%;
+    top: -10%;
+    width: 126px;
+    height: 126px;
+    border-radius: 63px;
+    background-color: #ffe409;
+}
+/* end format */
+
+
+/* reviews */
+.reviews{
+    border-bottom: 1px solid lightgray;
+    padding-top: 220px;
+    padding-bottom: 140px;
+}
+
+.reviews .content{
+    margin: 0px auto;
+    max-width: 1230px;
+    text-align: center;
+}
+
+/* end reviews */
+
+
+@media screen and (max-width: 1200px){
+    .header {
+        padding: 20px
+    }
+}
