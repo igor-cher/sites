@@ -1045,7 +1045,10 @@ tbody tr:nth-child(odd){
         display: none;
     }
 
-
+    .idea-info div:nth-child(2) {
+        margin-left: 10px;
+    }
+    
     .idea-list{
         padding-top: 50px;
     }
