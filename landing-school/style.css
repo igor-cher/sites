@@ -1044,6 +1044,11 @@ tbody tr:nth-child(odd){
     .section-name{
         display: none;
     }
+    
+    .info-course div:nth-child(1) {
+        width: 100%;
+        padding-top: 0;
+    }
 
     .idea-info div:nth-child(2) {
         margin-left: 10px;
