@@ -1008,7 +1008,7 @@ tbody tr:nth-child(odd){
 
 /* end footer */
 
-@media screen and (max-width:1400px) and (min-width: 1200px){
+@media screen and (max-width:1400px) and (min-width: 769px){
     .second-stage{
         flex-wrap: wrap;
     }
