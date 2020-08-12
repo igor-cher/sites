@@ -1022,6 +1022,9 @@ tbody tr:nth-child(odd){
     #map{
         left: -250px;
      }
+    .info-course div:nth-child(2) {
+        paddin-top: 0;
+    }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 769px){
