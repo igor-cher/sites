@@ -56,25 +56,8 @@ selected.innerHTML = counter
 document.addEventListener('click', (e)=> {
     e.stopPropagation()
 
-    if(e.target.classList.contains("prev")){
-        if(counter === 1 ){
-            prev.disabled = true;
-        } else{
-            prev.disabled = false
-            next.disabled = false
-            counter--;
-            selected.innerText = counter;
-        }
-    
-    } else if(e.target.classList.contains("next")){
-        if(counter === 3){
-            next.disabled = true;
-        } else{
-            next.disabled = false
-            counter++;
-            selected.innerText = counter;
-        }
-    }
+    selected.innerHTML = Number(document.querySelector('.slick-current').getAttribute('data-slick-index'))+1
+
 
     return counter;
 })
