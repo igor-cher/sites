@@ -51,14 +51,12 @@ selected.innerHTML = 1
 
  
 document.addEventListener('click', (e)=> {
-    e.stopPropagation()
+    e.preventDefault()
     selected.innerHTML = Number(document.querySelector('.slick-current').getAttribute('data-slick-index'))+1
 
 })
 
 document.addEventListener('touchend', (e)=> {
-    e.stopPropagation()
-
+    e.preventDefault()
     selected.innerHTML = Number(document.querySelector('.slick-current').getAttribute('data-slick-index'))+1
-
 })
