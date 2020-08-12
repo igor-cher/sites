@@ -1023,7 +1023,12 @@ tbody tr:nth-child(odd){
         left: -250px;
      }
     .info-course div:nth-child(2) {
-        paddin-top: 0;
+        padding-top: 0;
+    }
+    
+     .info-course div:nth-child(1) {
+        width: 100%;
+        padding-top: 0;
     }
 }
 
@@ -1045,10 +1050,6 @@ tbody tr:nth-child(odd){
         display: none;
     }
     
-    .info-course div:nth-child(1) {
-        width: 100%;
-        padding-top: 0;
-    }
 
     .idea-info div:nth-child(2) {
         margin-left: 10px;
