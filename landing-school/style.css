@@ -1101,6 +1101,7 @@ tbody tr:nth-child(odd){
 
     .first-stage, .info-course, .add-info, .shedule{
         height: auto;
+        max-width: inherit;
     }
 
     .second-stage{
