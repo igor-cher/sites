@@ -47,8 +47,6 @@ $(document).ready(function (){
 
 
 let selected = document.getElementById('selected');
-let prev = document.querySelector('.prev');
-let next = document.querySelector('.next')
 selected.innerHTML = 1
 
  
