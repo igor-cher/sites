@@ -56,7 +56,12 @@ document.addEventListener('click', (e)=> {
 
 })
 
-document.addEventListener('touchend', (e)=> {
+window.addEventListener('load', (e)=>{
+    if(window.innerWidth <= 768){
+        document.addEventListener('touchend', (e)=> {
     e.preventDefault()
     selected.innerHTML = Number(document.querySelector('.slick-current').getAttribute('data-slick-index'))+1
 })
+    }
+})
+
