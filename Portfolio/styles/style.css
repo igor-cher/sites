@@ -513,10 +513,14 @@ form{
 .contacts_main{
     text-align: center;
 }
+
+.contacts_main a{
+    color: black;
+}
 /*footer*/
 
-.footer{
+/* .footer{
     background-color: rgba(0,0,0,.7);
     text-align: center;
     padding-top: 15px;
-}
+} */

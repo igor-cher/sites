@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <section class="header position-fixed">
+                <nav class="navbar nabar-light navbar-expand-lg bg-white pt-2">
+                    <a href="" class="navbar-brand">
+                        <img src="assets/img/logo.png" alt="logo" height="36px">
+                    </a>
+                    <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse">
+                        <img src="assets/img/hamburger.png" alt="" width="25px">
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse">
+                        <ul class="d-flex align-items-center navbar-nav ml-auto">
+                            <li class="nav-item mr-2">
+                                <a href="" class="nav-link text-body">
+                                    <img class="px-2" src="assets/img/feedback.png" alt="" height="19px">
+                                    Feedback
+                                </a>
+                            </li>
+                            <li class="d-flex nav-item mr-4">
+                                <a href="" class="nav-link text-body">
+                                    <img class="px-2" src="assets/img/help.png" alt="" height="17px">
+                                    Help
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="" class="nav-link text-body">
+                                    John Johnson
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link"><img src="assets/img/arrow.png" alt="arrow"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <img src="assets/img/partner-logo.png" alt="partner" height="33px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            <!-- </div> -->
+        </section>
+        <nav id="sidebar" class="pt-5">
+            <div class="d-flex justify-content-end pt-4">
+                    <button id="collapseButton">
+                        <span></span>
+                        </button>
+            </div>
+    
+            <ul class="list-unstyled components  position-fixed">
+                <li class="text-center nav-link-active"><a href=""><img src="assets/img/point1.png" alt="" height="17px"><span class="visibility pl-2">Point 1</span></a></li>
+                <li class="text-center"><a href=""><img src="assets/img/point2.png" alt="" height="17px"><span class="visibility pl-2">Point 2</span></a></li>
+                <li class="text-center"><a href=""><img src="assets/img/point3.png" alt="" height="17px"><span class="visibility pl-2">Point 3</span></a></li>
+                <li class="text-center"><a href=""><img src="assets/img/point4.png" alt="" height="17px"><span class="visibility pl-2">Point 4</span></a></li>
+                <li class="text-center"><a href=""><img src="assets/img/point5.png" alt="" height="17px"><span class="visibility pl-2">Point 5</span></a></li>
+                <li class="text-center"><a href=""><img src="assets/img/point6.png" alt="" height="17px" ><span class="visibility pl-2">Point 6</span></a></li>
+            </ul>
+        </nav>
+        <section class="main">
+
+                    <div id="content" class=" pt-5 ml-5 container-fluid" >
+                            <div class="steps row d-flex align-items-center justify-content-between">
+                                    <div class="col-3 d-flex align-items-end justify-content-evently"><p>1.Step</p><button data-button="1"><img src="assets/img/step1.png" alt=""></button></div>
+                                    <div class="col-3 d-flex align-items-end justify-content-end"><p>2.Step</p><button data-button="2"><img src="assets/img/step2.png" alt=""></button></div>
+                                    <div class="col-3 d-flex align-items-end justify-content-end"><p>3.Step</p><button data-button="3"><img src="assets/img/step3.png" alt=""></button></div>
+                                    <div class="col-3 d-flex align-items-end justify-content-end"><p>4.Step</p><button data-button="4"><img src="assets/img/step4.png" alt=""></button></div>
+                            </div>
+                            <div class="row col">
+                                <h6>Shipper Detail</h6>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-lg-3 col-sm-5 col-10">
+                                    <input type="text" placeholder="Company Autocomplete"><button class="btn-search"><img src="assets/img/search.png" alt=""></button>
+                                </div>
+                                <div class="col-lg-3 col-sm-5 col-10">
+                                    <span class="com-name">Company name</span>
+                                    <input type="text" value="Urban Space" id="urban-space">
+                                </div>
+                            </div>
+                            <div class="row col pt-4">
+                                <h6>Shippment Details</h6>
+                            </div>
+                            <div class="row">
+                                <div class="table-responsive col-lg-12 col-sm-12">
+                                    <table class="table-default col-12">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" class="text-secondary">Handling Unit Type H/U</th>
+                                            <th scope="col" class="text-secondary"># of H/U</th>
+                                            <th scope="col" class="text-secondary">H/U Dimension</th>
+                                            <th scope="col" class="text-secondary">Stackable</th>
+                                            <th scope="col" class="text-secondary">Commodity Description</th>
+                                            <th scope="col" class="text-secondary">NMFC</th>
+                                            <th scope="col" class="text-secondary">Class</th>
+                                            <th scope="col" class="text-secondary"># of Pieces</th>
+                                            <th scope="col" class="text-secondary" >Total Weight</th>
+                                            <th scope="col" class="text-secondary">HazMat</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody class="text-dark">
+                                          <tr>
+                                            <th scope="row" class="font-weight-normal">Pallets</th>
+                                            <td>3</td>
+                                            <td>15 x 25 x 23 in</td>
+                                            <td>Yes</td>
+                                            <td class="tab-block"><span><input type="text" class="input-table1" value="Multigrain Snacks..., 300"><button class="btn-search"><img src="assets/img/search.png" alt=""></button></span></td>
+                                            <td><a href="">NMFC</a></td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>400 Ibs</td>
+                                            <td><input type="checkbox" name="" id=""></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" colspan="4"></th>
+                                            <td class="tab-block"><span><input type="text" class="input-table1" value="Multigrain Snacks..., 300"><button class="btn-search"><img src="assets/img/search.png" alt=""></button></span></td>
+                                            <td><a href="">NMFC</a></td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>400 Ibs</td>
+                                            <td><input type="checkbox" checked name="" id=""></td>
+                                          </tr>
+                                          <tr class="hr">
+                                          </tr>
+                                          <tr>
+                                            <th scope="row" colspan="4"></th>
+                                            <td><select name="" id="">
+                                                <option value="Un">Un</option>
+                                                <option value="Un1">Un1</option>
+                                            </select>
+                                            <input type="text" class="ml-4 mr-3 border-lightgrey" placeholder="Un Number" style="width: 81px;">
+                                           
+                                        </td>
+                                      
+                                        <td class="abs"> <input type="text" class="border-lightgrey" placeholder="Propper Shipping Name" style="width: 201px;"></td>
+                                            <td class="abs1">&nbsp;<input type="text" class="  border-lightgrey" placeholder="Hazard Class" style="width: 100px;"><a class="ml-1" style="color: #00B7BD;" href="">?</a></td>
+                                            <td class="abs2">
+                                                <select name="" id="" style="width: 121px;">
+                                                <option value="Packing Group">Packing Group</option>
+                                                <option value="Packing Group2">Packing Group2</option>
+                                            </select></td>
+                                            <td class="abs3"><select  name="" id="" style="width: 121px;">
+                                                <option value="Packing Type">Packing Type</option>
+                                                <option value="Packing Type2">Packing Type2</option>
+                                            </select></td>
+                                            
+                                          </tr>
+                                          
+                                          <tr>
+                                            <th scope="row" class="font-weight-normal">Pallets</th>
+                                            <td>3</td>
+                                            <td>15 x 25 x 23 in</td>
+                                            <td>No</td>
+                                            <td class="tab-block"><span><input type="text" class="input-table1" value="Multigrain Snacks..., 300"><button class="btn-search"><img src="assets/img/search.png" alt=""></button></span></td>
+                                            <td><a href="">NMFC</a></td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>400 Ibs</td>
+                                            <td><input type="checkbox" name="" id=""></td>
+                                          </tr>
+                                          <tr class="hr"></tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 col-sm-5 col-10 ml-auto pt-3">
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <input type="checkbox" name="" id="">
+                                        <p style="margin: 0; font-size: 14px; margin-left: 10px;"> I agree to the <a style="color: #00B7BD;"href="">Terms and Conditions</a></p>
+                                    </div>
+                                    <button class="btn-dispatch">DISPATCH</button>
+                                </div>
+                            </div>
+                    </div>
+        </section>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script>
+document.querySelector('#collapseButton span').addEventListener('click', (e)=>{
+   e.target.classList.toggle("img")
+    document.querySelector('#sidebar').classList.toggle('active')
+    document.querySelectorAll('#sidebar li a span').forEach(link=>{
+        link.classList.toggle('visibility')
+    })
+})
+
+</script>
+</body>
+</html>

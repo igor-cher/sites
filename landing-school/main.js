@@ -6,8 +6,6 @@ let showMenu = () => {
 }
 
 document.querySelector(".menu").addEventListener('click', (e) => {
-    e.preventDefault()
-
     showMenu()
 })
 
@@ -19,10 +17,23 @@ document.querySelectorAll("nav a").forEach( link => {
 })
 
 
+$(window).scroll(function() {
+    var $header = $('.header');
+    if ($(this).scrollTop() > 100) {
+      if (!$header.hasClass('sticky')) $header.addClass("sticky");
+    } else {
+      if ($header.hasClass('sticky')) {
+          $header.removeClass("sticky");
+      }
+    }
+});
+
+
+
 // idea list
 
 
-let btns = document.querySelectorAll(".idea-button button").forEach(btn => {
+document.querySelectorAll(".idea-button button").forEach(btn => {
     btn.addEventListener('click', (e)=>{
         e.preventDefault()
         e.target.classList.toggle('idea-button-active')
@@ -46,22 +57,53 @@ $(document).ready(function (){
 });
 
 
+// validate phone
+function validate(evt) {
+    var theEvent = evt || window.event;
+    
+    if (theEvent.type === 'paste') {
+        key = event.clipboardData.getData('text/plain');
+    } else {
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode(key);
+    }
+    var regex = /[0-9]|\./;
+    if( !regex.test(key) ) {
+      theEvent.returnValue = false;
+      if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+  }
+
+
+
+
+// slider
+
 let selected = document.getElementById('selected');
 selected.innerHTML = 1
 
  
 document.addEventListener('click', (e)=> {
-    e.preventDefault()
     selected.innerHTML = Number(document.querySelector('.slick-current').getAttribute('data-slick-index'))+1
 
 })
 
-window.addEventListener('load', (e)=>{
-    if(window.innerWidth <= 768){
-        document.addEventListener('touchend', (e)=> {
-    e.preventDefault()
+document.addEventListener('touchend', (e)=> {
+
     selected.innerHTML = Number(document.querySelector('.slick-current').getAttribute('data-slick-index'))+1
 })
-    }
-})
 
+// form submit
+
+function modal(){
+    document.querySelector('.modal').classList.toggle('showModal')
+}
+
+
+$('form').submit(function () {
+    setTimeout(()=> {
+        modal()
+    }, 2000)
+    modal()
+    return false;
+});
