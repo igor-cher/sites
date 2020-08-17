@@ -17,6 +17,13 @@ document.querySelectorAll("nav a").forEach( link => {
 })
 
 
+// show block
+
+document.querySelector('.shedule-second button').addEventListener('mouseover', (e)=>{
+  document.querySelector('.shedule-second div').classList.toggle('idea-list-active')
+})
+
+
 $(window).scroll(function() {
     var $header = $('.header');
     if ($(this).scrollTop() > 100) {

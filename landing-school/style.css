@@ -422,7 +422,7 @@ img{
 
 
 .shedule-info .shedule-time{
-    min-width: 595px;
+    width: 100%;
     display: flex;
     margin-left: 50px;
     margin-right: 50px;
@@ -462,14 +462,13 @@ font-family: "Gotham Pro";
 }
 
 .shedule-second{
-    width: 100%;
-    max-width: 446px;
     justify-content: space-between;
     flex-direction: row;
     position: relative;
 }
 
 .shedule-second div{
+    display: none;
     margin-top: 8px;
     padding-left: 35px;
     padding-right: 23px;
@@ -486,7 +485,7 @@ font-family: "Gotham Pro";
 }
 
 .shedule-info button{
-    margin-top: 12px;
+    margin: 0 15px;
     width: 33px;
     height: 33px;
     padding: 7px;
@@ -497,6 +496,7 @@ font-family: "Gotham Pro";
     font-weight: 600;
     background: transparent;
 }
+
 
 /* end hero-section */
 
@@ -601,7 +601,7 @@ font-family: "Gotham Pro";
 }
 
 .idea-list-active{
-    display: block;
+    display: block!important;
 }
 
 .idea-list ul{
