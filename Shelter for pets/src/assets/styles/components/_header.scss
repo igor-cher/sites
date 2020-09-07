@@ -1,0 +1,145 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: .8s ease-in-out;
+
+    @media screen and (min-width:$tablet) {
+        position: absolute;
+    }
+
+}
+
+
+.sticky{
+    background: rgba($title, 0.5);
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    @include isFlex($align: center, $justify: space-between, $wrap: nowrap);
+
+    &__logo{
+        padding-top: 10px;
+
+        @media screen and (min-width:$tablet){
+            padding-top: 0;
+        }
+
+
+        &_link{
+            color:$orange-gold;
+            font-size: 32px;
+            &:hover{
+                border-bottom: 0;
+            }
+        }
+    }
+    
+
+    &__list{
+        position: absolute;
+        left: -150%;
+        min-height: 100vh;
+        top: 0;
+        width: 100%;
+        @include isFlex($align:center, $justify:center, $direction: column);
+        transition: all .8s ease-in-out;
+
+        .menu__link{
+            padding: 20px 0 5px;
+        }
+
+        @media screen and(min-width: $tablet) {
+            position: relative;
+            left: 0;
+            min-height: 0;
+            max-width: 465px;
+            @include isFlex($align:center, $justify:space-between, $direction: row);
+        }
+
+    }
+
+    .btn{
+        position: relative;
+        overflow:hidden;
+        transition:all 0.5s ease;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        z-index: 9999;
+        cursor: pointer;
+        background: transparent;
+
+
+        span{
+            width: 30px;
+            height: 2px;
+            position:absolute;
+            top: 55%;
+            left: 100%;
+            text-indent:-9999px;
+            margin:-4px 0 0 -30px;
+            opacity: 0.8;
+            transition:all 0.5s ease-in-out;
+
+            &:before, &:after{
+                width:100%;
+                height:3px;
+                background: $orange-gold;
+                position:absolute;
+                content:'';
+                left:0;
+                right:0;
+                top:6px;
+                transition:all 0.5s ease-in-out;
+            }
+
+            &:before{
+                top:-6px;
+            }
+
+            &.btn__active{
+
+                    background:none;
+                    transform:rotate(136deg); 
+    
+                    &:after{
+                        top: 2px;
+                        transform:rotate(-92deg);
+                    }
+    
+                    &:before{
+                        top:2px;
+                        transform:rotate(-182deg);
+                    }
+    
+                
+            }
+            
+        }
+
+        @media screen and(min-width: $tablet) {
+            display: none;
+        }
+
+    }
+
+
+    &__active{
+        .menu__list{
+            width: 100%;
+            left: -20%;
+            padding-left: 15%;
+            background: rgba( #000000, 0.8);
+            z-index: 1000;
+        }
+    }
+
+    @media screen and(min-width:$tablet){
+        padding-top: 42px;
+    }
+
+}
+

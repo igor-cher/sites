@@ -1,0 +1,63 @@
+/* src/assets/styles/components/_footer.scss  */
+
+.footer {
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 75px 0 40px;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+  background-position: 75%;
+
+  @media screen and (min-width: $tablet){
+    background-position: 65%;
+  }
+
+  h2{
+    color: $white;
+  }
+
+
+  a{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: $orange-gold;
+    font-family: $times;
+    margin-left: 25px;
+  }
+
+  &__main{
+    width: 100%;
+    max-width: 750px;
+    
+    @media screen and (min-width:$tablet) {
+      @include isFlex($align: center, $justify: space-between, $wrap:wrap, $direction: row);
+    }
+    
+    &_contacts, &_location{
+      width: 100%;
+      
+      @media screen and (min-width:$tablet) {
+        max-width: 295px;
+      }
+    }
+
+    &_location > h2, &_location > div{
+      margin-bottom: 25px;
+    }
+
+    &_item{
+      @include isFlex($align: center, $justify: flex-start, $wrap:nowrap);
+      margin-bottom: 35px;
+    }
+
+
+
+  }
+
+
+
+}
+
+
+

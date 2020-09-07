@@ -1,0 +1,74 @@
+.donation{
+    background-color: $bg-grey;
+    padding: 60px 0 90px;
+
+    &__main{
+        
+        @media screen and (min-width: $tablet){
+            @include isFlex($align: center, $justify:space-between, $wrap:nowrap);
+            width: 100%;
+            max-width: 945px;
+            // margin: 0 auto;
+        }
+
+        p{
+            color:$text-bg-white;
+            letter-spacing: 1px;
+        }
+
+        &_photo{
+            width: 100%;
+            text-align: center;
+
+            @media screen and (min-width: $tablet){
+                max-width: 525px;
+            }
+        }
+
+        &_info{
+            width: 100%;
+            text-align: center;
+            h2{
+                margin-bottom: 12px;
+            }
+            @media screen and (min-width: $tablet){
+                max-width: 360px;
+                text-align: left;
+            }
+
+            &_card{
+                min-height: 175px;
+                @include isFlex($align: center, $justify: center, $wrap:wrap);
+                @media screen and (min-width: $tablet){
+                    @include isFlex($align: center, $justify: flex-start, $wrap:wrap);
+                }
+                
+                button{
+                    width: 100%;
+                    max-width: 319px;
+                    height: 47px;
+                    border-radius: 9px;
+                    padding-left: 15px;
+                    @include isFlex($align: center, $justify: flex-start, $wrap:wrap);
+
+                    span{
+                        padding-left: 15px;
+                        font-size: 20px;
+                        letter-spacing: 1px;    
+                        color: #292929;
+                        font-family: $times;
+                    }
+                }
+            
+            }
+
+            .legalInfo{
+                font-size: 12px;
+                line-height: 18px;
+                color: #b2b2b2;
+                font-style: italic;
+                font-family: $arial;
+            }
+        }
+    }
+}

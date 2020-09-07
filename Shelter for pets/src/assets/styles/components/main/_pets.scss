@@ -1,0 +1,67 @@
+.pets{
+    background-color: $bg-grey;
+    padding: 50px 0 70px;
+
+    &__main{
+        text-align: center;
+        &_title{
+            width: 100%;
+            max-width: 405px;
+            margin: 0 auto;
+            text-align: center;
+
+            h2 span{
+                white-space: pre;
+            }
+        }
+        &_slider{
+            @include isFlex($align: center, $wrap: nowrap);
+            padding-bottom: 35px;
+            .pet{
+                &_main{
+                    @include isFlex($align: center, $justify: space-evenly, $direction:column);
+                    height: 424px;
+                    margin: 30px;
+                    border-radius: 9px;
+                    filter: drop-shadow(0px 2px 17.5px rgba(13,13,13,0.04));
+                    background-color: #fafafa;
+
+                   
+                    button{
+                        max-width: 188px;
+                        border-radius: 26px;
+                    }
+                    
+                @media screen and (min-width:$tablet){
+                    max-width: 270px;
+                }
+
+                }
+            }
+                button{
+                width: 100%;
+                max-width: 50px;
+                height: 50px;
+                padding-bottom: 5px;
+                border-radius: 50%;
+                background-color: #fafafa!important;
+                border: 2px solid #f1cdb3;
+
+                &:hover, &:active{
+                    background-color: #f1cdb3!important;
+                  }
+
+                }
+
+        }
+        
+
+        .get_toKnow{
+            max-width: 267px;
+            height: 52px;
+            width: 100%;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+    }
+}

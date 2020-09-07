@@ -1,0 +1,52 @@
+.about{
+    min-height: 100vh;
+    padding-top: 85px;
+
+    @media screen and (min-width: $tablet){
+        min-height: 600px;
+    }
+
+    &__main{
+        @media screen and (min-width: $tablet){
+            @include isFlex($align: center, $justify: space-between, $wrap:nowrap);
+            width: 100%;
+            max-width: 830px;
+            margin: 0 auto;
+        }
+
+        &_petsPhoto{
+            width: 100%;
+            text-align: center;
+
+            @media screen and (min-width: $tablet){
+                max-width: 300px;
+            }
+        }
+        &_shelterInfo{
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+            @media screen and (min-width: $tablet){
+                max-width: 415px;
+                text-align: left;
+            }
+
+            h2 q{
+                quotes: "\201C" "\201D";
+                white-space: pre;
+            }
+            
+            span:before{
+                content: “\A”;
+            }
+
+            p{
+                color:$text-bg-white;
+                margin-bottom: 25px;
+            }
+
+
+        }   
+
+    }
+}

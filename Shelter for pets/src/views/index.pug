@@ -1,0 +1,23 @@
+extends ./templates/_template.pug
+
+block title
+  title My Page - Home
+
+
+block basicSeo
+  meta(name='description' content='Home Page')
+  meta(name='keywords', content='main page, home page')
+  meta(name='author' content='test-project')
+
+block links
+  link(href='')
+
+block content
+
+  //- Desktop page
+  section.wrapper
+    include ./components/header/header.pug
+    
+    include ./components/main/main.pug
+    
+    include ./components/footer.pug

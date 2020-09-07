@@ -1,0 +1,62 @@
+.help{
+    // min-height: 595px;
+    padding: 60px 0 0;
+
+    .pets__services{
+        padding-top: 35px;
+        @include isFlex($align: center, $wrap: wrap, $justify:center);
+        
+        button{
+            width: 100%;
+            max-width: 50px;
+            height: 50px;
+            padding-bottom: 5px;
+            border-radius: 50%;
+            background-color: #fafafa!important;
+            border: 2px solid #f1cdb3;
+
+            &:hover, &:active{
+                background-color: #f1cdb3!important;
+              }
+
+        }
+
+        .slick-dots{
+            width: 80%;
+            @include isFlex($align: center, $wrap: nowrap, $justify:space-between);
+            padding-bottom: 20px;
+
+            .slick-active > button{
+                background-color: #f1cdb3!important
+            }
+
+            button{
+                height: 25px;
+                background: transparent;
+                font-size: 0;
+                padding: 0 10px;   
+            }
+        }
+
+        .thumbnail{
+            @include isFlex($align: center, $wrap: wrap, $justify:center, $direction: column);
+            width: 50%;
+            text-align: center;
+            margin: 30px 0;
+            @media screen and (min-width:$tablet){
+                width: 100%;
+                display: block;
+                max-width: 200px;
+                margin: 0 15px 75px;
+            }
+        }
+
+        p{
+            color: $title;
+            font-size: 20px;
+            margin-top: 23px;
+            letter-spacing: 2px;
+        }
+    }
+
+}
